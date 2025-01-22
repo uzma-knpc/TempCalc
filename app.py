@@ -10,15 +10,12 @@ from langchain_core.tools import tool
 import math
 import statistics
 
-
-
 load_dotenv()
 
 GOOGLE_API_KEY=os.environ.get('GOOGLE_API_KEY')
 
-
-
 llm=ChatGoogleGenerativeAI(model="gemini-1.5-flash",api_key=GOOGLE_API_KEY)
+
 @tool
 def calculator(expressions):
     """
