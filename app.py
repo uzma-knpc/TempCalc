@@ -141,12 +141,8 @@ agent = initialize_agent(
     llm=llm,
     agent=AgentType.STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION)
 
-#response=agent.invoke({"input":"mean and standard deviation of 1+5+6+8 "})
+#response=agent.invoke({"input":"mean and standard deviation of 1,5,6,8 "})
 #print(f"\n{response}\n")
-
-
-
-
 st.set_page_config(page_title="AI Powerd TempCalc", layout="centered")
 
 # Custom CSS for styling
